@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Banner -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Quản Lý Sinh Viên Thực Tập</h1>
+
+        </div>
+        <div class="banner-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9s0cxWN9XQZ7gJAvWVFaoaj-_tpz2mn6CrlyXQejeo6hkXaiOZf7Lpv-TTYLUcXwG-LU&usqp=CAU" alt="Banner Image">
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li id="xemMenu" style="display: none;"><a href="#">Xem</a></li>
+            <li id="nhap" style="display: none;" onclick="openNhap()"><a href="#">Nhập </a></li>
+            <li id="datLichMenu" style="display: none;"><a href="#">Xem</a></li>
+            <li><a href="#" onclick="showLoginForm()">Đăng nhập</a></li>
+        </ul>
+    </nav>
+
+    <!-- Body Content -->
+    <main class="content"></main><main class="content">
+        <section class="intro">
+            <div class="gioithieu">
+            <h2>Giới thiệu về chúng tôi</h2>
+            <p>Thực tập là gì?
+                Thực tập là quá trình sinh viên được tham gia làm việc tại các cơ quan, tổ chức, doanh nghiệp,... để áp dụng kiến thức đã học vào thực tế. Trong quá trình thực tập, sinh viên được giao các công việc, nhiệm vụ cụ thể, tương tự như công việc của một nhân viên chính thức. Thực tập là một hoạt động quan trọng và cũng là một học phần chính thức trong quá trình học tập của sinh viên.</p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Bảng Các Giáo Trình Thực Tập</h2>
+            <table>
+                <tr>
+                    <th>STT</th>
+                    
+                    
+                    <th>Vị trí thực tập</th>
+                    <th>Thời gian thực tập</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    
+                    <td>Thiết kế wed</td>
+                    <td>4 Tháng</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    
+                    <td>BackEnd wed</td>
+                    <td>5 tháng</td>
+
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+        <p>Email: contact@example.com</p>
+        <p>Điện thoại: 0123456789</p>
+    </footer>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="login-form" style="display: none;">
+        <form onsubmit="handleLogin(event)">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email">
+            <button type="submit">Xác nhận</button>
+        </form>
+        <button onclick="hideLoginForm()">Hủy</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

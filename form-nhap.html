@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nhập Thông Tin Bệnh Nhân</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Nhập Thông Tin Sinh Viên</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <form id="patientForm" onsubmit="handleSubmit(event)">
+            <label for="name">Họ tên sinh viên(*):</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập họ tên bệnh nhân" autofocus>
+
+            <label for="phone">Email(*):</label>
+            <input type="text" id="phone" name="phone" required placeholder="Nhập email" autofocus>
+
+            <label for="specialty">Vị trí thực tập:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="">Chọn vị trí</option>
+                <option value="back">web backend</option>
+                <option value="front">web fronten</option>
+            </select>
+
+            <label for="doctor">Framework (*):</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Chọn framework</option>
+            </select>
+
+            <button type="submit">Xác nhận</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+        <p>Email: contact@example.com</p>
+        <p>Điện thoại: 0123456789</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

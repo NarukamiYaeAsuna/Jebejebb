@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí thành công</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Đăng Kí Thực Tập </h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <h2>Chúc mừng Bạn đã đắng kí thực tập thành công</h2>
+        <p id="patientInfo"></p>
+        <button onclick="window.location.href='index.html'">OK</button>
+    </main>
+
+    <footer class="footer">
+        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+        <p>Email: contact@example.com</p>
+        <p>Điện thoại: 0123456789</p>
+    </footer>
+
+    <script>
+        // Lấy dữ liệu từ URL và hiển thị
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const specialty = urlParams.get('specialty');
+        const doctor = urlParams.get('doctor');
+        const phone =urlParams.get('phone');
+        // Hiển thị thông tin đặt lịch
+        document.getElementById('patientInfo').textContent = `Tên sinh viên: ${name}\nEmail: ${phone}`;
+    </script>
+</body>
+</html>

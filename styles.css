@@ -1,0 +1,228 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #009688;
+    color: white;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Navigation Menu */
+.navbar {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-section table, th, td {
+    border: 1px solid #ddd;
+}
+
+.table-section th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #f4f4f4;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content, .banner-image {
+        width: 100%;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+/* Các phần CSS khác như trên */
+
+/* Login Form */
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.gioithieu{
+    color: #009688;
+}
+
+.login-form button:hover {
+    background-color: #00796b;
+}
+/* Các phần CSS chung cho các trang khác */
+
+/* Form nhập */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00796b;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Các phần khác của CSS như banner, content */
